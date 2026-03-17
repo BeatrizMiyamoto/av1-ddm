@@ -11,7 +11,7 @@ export default function App() {
       .then(response => response.json())
       .then(res => {
         setPokemon(res.forms[0].name);
-        setImagem(res.sprites.front_default); // 🔥 imagem do Pokémon
+        setImagem(res.sprites.front_default); 
       })
       .catch(error => {
         console.error('Erro:', error);
